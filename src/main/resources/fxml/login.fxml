@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="login_container" stylesheets="@../Css/Style.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.javafx_aromart.aromamartjavafx.LoginController">
+   <children>
+      <VBox layoutY="65.0" prefHeight="400.0" prefWidth="200.0" styleClass="logo-container" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="AromaMart" />
+         </children>
+      </VBox>
+      <VBox layoutX="320.0" layoutY="91.0" prefHeight="350.0" prefWidth="350.0" styleClass="login_form_container" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <Label text="User Name" />
+            <TextField fx:id="tname" styleClass="input_feild" />
+            <Label text="Passward:" />
+            <PasswordField fx:id="tpass" styleClass="input_feild" />
+            <Button fx:id="btnCon" mnemonicParsing="false" stylesheets="@../Css/Style.css" text="Sign in " />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
